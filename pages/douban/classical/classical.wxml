@@ -1,0 +1,33 @@
+<view class="page-loading {{showLoading ? '' : 'hide'}}">
+  <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+</view>
+<scroll-view style="height: 100%;" scroll-y="true" bindscrolltolower="scroll" lower-threshold="200">
+  <block wx:for-items="{{songs}}" wx:for-item="song">
+    <view class="song" bindtap="viewDetail" data-id="{{song.id}}" data-title="{{song.title}}">
+      <view class="song-img">
+        <image mode="scaleToFill" src="{{song.image}}"></image>
+      </view>
+      <view class="song-detail">
+        <view class="song-title">
+          <text>{{song.title}}</text>
+          <text>{{song.alt_title}}</text>
+        </view>
+        <view class="song-star">
+          <block wx:if="{{song.rating.average > 0}}">
+            <text class="label">评分</text>
+            <text>{{song.rating.average}}</text>
+          </block>
+          <block wx:else>
+            <text class="label">暂无评分</text>
+          </block>
+        </view>
+        <view class="song-author">
+          <text class="label">作者</text>
+          <block wx:for-items="{{song.author}}" wx:for-item="author">
+            <text>{{author.name}}</text>
+          </block>
+        </view>
+      </view> 
+    </view>
+  </block>
+</scroll-view>

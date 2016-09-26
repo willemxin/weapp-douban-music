@@ -1,0 +1,41 @@
+/*loading*/
+.page-loading{
+	padding: 30px 0;
+	text-align: center;
+}
+.hide{
+	display: none;
+}
+
+/*song*/
+.song{
+	overflow: hidden;
+	margin: 0px 10px 10px;
+}
+.song-img{
+	float: left;
+	width: 100px;
+}
+.song-img image{
+	width: 100px;
+	height: 100px;
+}
+.song-detail{
+	float: left;
+	width: 50%;
+	margin-left: 30px;
+}
+.song-title{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.song-title text{
+	display: block;
+}
+.song-star{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.song-author{
+	font-size: 12px;	
+}

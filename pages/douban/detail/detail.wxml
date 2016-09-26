@@ -1,0 +1,25 @@
+<view>
+  <view class="detail-image">
+    <image src="{{datas.image}}"></image>
+  </view>
+  <view>
+    <text>{{datas.title}}</text>
+  </view>
+  <view>
+    <text>{{datas.summary}}</text>
+  </view>
+  <view>
+    <text>作者：</text>
+    <block wx:for-items="{{datas.author}}" wx:for-item="author">
+      <text>{{author.name}}</text>
+    </block>
+  </view>
+  <view>
+    <text>出版方：</text>
+    <text>{{datas.attrs.publisher}}</text>
+  </view>
+  <view>
+    <text>发布时间：</text>
+    <text>{{datas.attrs.pubdate}}</text>
+  </view>
+</view>

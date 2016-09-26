@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/douban/Folk/Folk",
+    "pages/douban/classical/classical",
+    "pages/douban/detail/detail"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "#f6f6f6",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/douban/Folk/Folk",
+      "iconPath": "img/folk.jpg",
+      "selectedIconPath": "img/folk.jpg",
+      "text": "民谣"
+    },{
+      "pagePath": "pages/douban/classical/classical",
+      "iconPath": "img/classical.jpg",
+      "selectedIconPath": "img/classical.jpg",
+      "text": "古典"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆瓣音乐",
+    "navigationBarTextStyle":"black"
+  }
+}
