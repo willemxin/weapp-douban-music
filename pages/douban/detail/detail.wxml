@@ -9,17 +9,23 @@
     <text>{{datas.summary}}</text>
   </view>
   <view>
-    <text>作者：</text>
+    <text></text>
     <block wx:for-items="{{datas.author}}" wx:for-item="author">
       <text>{{author.name}}</text>
     </block>
+  </view>
+  <view>
+    <text>发布时间：</text>
+    <text>{{datas.attrs.pubdate}}</text>
   </view>
   <view>
     <text>出版方：</text>
     <text>{{datas.attrs.publisher}}</text>
   </view>
   <view>
-    <text>发布时间：</text>
-    <text>{{datas.attrs.pubdate}}</text>
+    <text>准基收录</text>
+  </view>
+  <view wx:for="{{datas.attrs.tracks}}">
+    {{item}}
   </view>
 </view>

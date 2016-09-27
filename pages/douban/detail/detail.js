@@ -20,7 +20,7 @@ Page({
             'method': 'GET',
             'success': function(data) {
                 if (data.statusCode == 200 && /ok/.test(data.errMsg)) {
-                	console.log(data)
+                    data.data.attrs.tracks = data.data.attrs.tracks[0].split('\n');
                     that.setData({
                         datas: data.data
                     });

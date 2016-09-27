@@ -22,7 +22,7 @@
           </block>
         </view>
         <view class="song-author">
-          <text class="label">作者</text>
+          <text class="label">作者：</text>
           <block wx:for-items="{{song.author}}" wx:for-item="author">
             <text>{{author.name}}</text>
           </block>
