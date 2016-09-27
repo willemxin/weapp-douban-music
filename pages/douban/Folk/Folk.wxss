@@ -24,10 +24,16 @@
 	float: left;
 	width: 50%;
 	margin-left: 30px;
+	height: 100px;
+}
+.song-detail view{
+	over-flow: hidden;
 }
 .song-title{
 	font-size: 14px;
 	margin-bottom: 10px;
+	height: 30px;
+	margin-top: 10px;
 }
 .song-title text{
 	display: block;
@@ -35,6 +41,7 @@
 .song-star{
 	font-size: 12px;
 	margin-bottom: 10px;
+	height:20px;
 }
 .song-author{
 	font-size: 12px;	

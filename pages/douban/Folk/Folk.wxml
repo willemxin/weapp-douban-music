@@ -10,7 +10,7 @@
       <view class="song-detail">
         <view class="song-title">
           <text>{{song.title}}</text>
-          <text>{{song.alt_title}}</text>
+          <!--<text>{{song.alt_title}}</text>-->
         </view>
         <view class="song-star">
           <block wx:if="{{song.rating.average > 0}}">
